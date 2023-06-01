@@ -5,6 +5,7 @@ on:
       - "master"
       - "release-*"
       - "!release-2.8"
+      - "upgrade-monaco"
   pull_request:
     branches:
       - "master"
