@@ -40,6 +40,9 @@ const config = {
         test: /\.js$/,
         loaders: [...(isProd ? ['babel-loader'] : ['source-map-loader'])],
       }, {
+        test: /monaco-editor[\\/].*\.js$/,
+        loader: "babel-loader",
+      }, {
         test: /\.scss$/,
         loader: "style-loader!raw-loader!sass-loader"
       }, {
